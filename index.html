@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Stream Clipper - Automated Video Clipping Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .how-it-works {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .how-it-works h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .step {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 auto 15px;
+        }
+
+        .platforms {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .platforms h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .platform-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin-top: 20px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .features, .steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Court Stream Clipper</h1>
+            <p class="tagline">AI-Powered Video Clipping for Court & Bodycam Content</p>
+        </header>
+
+        <div class="hero">
+            <h2 style="color: #667eea; margin-bottom: 20px;">Automated Video Processing Service</h2>
+            <p style="font-size: 1.1em; line-height: 1.8;">
+                Court Stream Clipper is an intelligent automation service that monitors public court proceedings
+                and police bodycam footage, identifies compelling moments using artificial intelligence, and
+                creates engaging short-form clips for social media platforms.
+            </p>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🤖 AI-Powered Detection</h3>
+                    <p>Uses OpenAI Whisper to transcribe audio and detect keywords like "objection," "sovereign citizen," and more.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Automated Processing</h3>
+                    <p>Monitors multiple YouTube channels 24/7, automatically creating clips when interesting moments are detected.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Multi-Platform Upload</h3>
+                    <p>Automatically uploads clips to YouTube Shorts and TikTok with optimized formatting for each platform.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎯 Smart Clipping</h3>
+                    <p>Creates perfectly timed clips with context buffers, captions, and vertical 9:16 format for mobile viewing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Monitor</h3>
+                    <p>Continuously monitors public court streams and bodycam channels on YouTube.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Detect</h3>
+                    <p>AI analyzes audio for keywords, volume spikes, and moments of interest.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Clip</h3>
+                    <p>Creates short, engaging video clips with captions and proper formatting.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Upload</h3>
+                    <p>Automatically posts to TikTok and YouTube Shorts with relevant hashtags.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="platforms">
+            <h2>Available on Social Media</h2>
+            <p>Find our clips on your favorite platforms</p>
+            <div class="platform-badges">
+                <div class="badge">📹 YouTube Shorts</div>
+                <div class="badge">🎵 TikTok</div>
+            </div>
+        </div>
+
+        <footer>
+            <div style="margin-bottom: 15px;">
+                <a href="terms.html">Terms of Service</a> |
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            <div class="contact">
+                <p><strong>Contact:</strong> funnycourtclips@gmail.com</p>
+                <p style="margin-top: 10px; color: #999; font-size: 0.9em;">
+                    &copy; 2026 Court Stream Clipper. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
